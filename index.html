@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scheda Studente</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Scheda Studente</h1>
+    <p class="subtitle">Demo Azure Static Web Apps</p>
+
+    <form id="studentForm" class="card">
+      <label for="nome">Nome</label>
+      <input id="nome" name="nome" type="text" required />
+
+      <label for="cognome">Cognome</label>
+      <input id="cognome" name="cognome" type="text" required />
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required />
+
+      <label for="indirizzo">Indirizzo</label>
+      <input id="indirizzo" name="indirizzo" type="text" required />
+
+      <button type="submit">Invia</button>
+    </form>
+
+    <section id="result" class="card hidden">
+      <h2>Dati inseriti</h2>
+      <p><strong>Nome:</strong> <span id="r-nome"></span></p>
+      <p><strong>Cognome:</strong> <span id="r-cognome"></span></p>
+      <p><strong>Email:</strong> <span id="r-email"></span></p>
+      <p><strong>Indirizzo:</strong> <span id="r-indirizzo"></span></p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
